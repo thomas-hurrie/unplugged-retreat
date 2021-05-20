@@ -97,6 +97,15 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
 }
 
 ul,
@@ -154,6 +163,14 @@ header {
 
 header .content-wrapper {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,6 +245,9 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url(../img/hero.jpg) center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -280,6 +300,8 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('../img/features.jpg') center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -566,7 +588,8 @@ input[type=button] {
       width: 85%;
     }
 
-    .reviews article div {
+    .reviews article div,
+    .reviews article figure {
       width: 49%;
     }
 
@@ -737,6 +760,10 @@ input[type=button] {
     .contact-section .content-wrapper h2 {
       width: 95%;
       font-size: 3em;
+    }
+
+    .contact-content h4 {
+      font-size: 1.875em;
     }
 
     /*===============================================
