@@ -100,14 +100,6 @@ body {
   color: #e2e3ed;
 }
 
-img {
-  width: 100%;
-}
-
-figure {
-  margin: 0;
-}
-
 ul,
 ol {
   list-style: none;
@@ -127,14 +119,22 @@ h2 {
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500
-  margin: 20px 0;
+  font-weight: 500;
   font-size: 1.125em;
+  margin: 20px 0;
 }
 
 p {
-  font-size: 0.875em;
+  font-size: .875em;
   line-height: 1.285em;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
 }
 
 address {
@@ -143,7 +143,7 @@ address {
 
 .content-wrapper {
   width: 90%;
-  margin: 50px 0
+  margin: 50px 0;
 }
 
    /* -------------------- Base Header - Footer Styles -------------------- */
@@ -245,8 +245,9 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
-  background: url(../img/hero.jpg) center no-repeat #333;
+  background: url(../img/hero.jpg);
   background-size: cover;
+  background-position: center;
   min-height: 500px;
   display: flex;
   justify-content: center;
@@ -271,7 +272,7 @@ aside {
 }
 
 aside .form {
-  margin-top: 30px
+  margin-top: 30px;
 }
 
 input[type=text] {
@@ -300,8 +301,9 @@ input[type=button] {
 /* Features */
 
 .features {
-  background: url('../img/features.jpg') center no-repeat;
+  background: url('../img/features.jpg');
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -321,6 +323,11 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features p {
