@@ -103,6 +103,8 @@ body {
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -114,6 +116,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
+  margin: 0;
 }
 
 h3,
@@ -570,6 +573,10 @@ input[type=button] {
 
     /*Hero Area*/
 
+    .hero-area {
+      min-height: 600px;
+    }
+
     .hero-area h1 {
       font-size: 3em;
       line-height: 1;
@@ -600,12 +607,16 @@ input[type=button] {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex: column wrap;
-      flex: 50%;
+      flex-flow: column wrap;
+      flex-basis: 50%;
     }
 
     .features .features-items-description {
       width: 62%;
+    }
+
+    .features i {
+      margin-bottom: 30px;
     }
 
     /*Reviews*/
@@ -749,7 +760,7 @@ input[type=button] {
 
     .hero-area h1 {
       font-size: 3.75em;
-      width: 60%;
+      width: 80%;
     }
 
     /*Aside*/
